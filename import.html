@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .body_container {
+            margin-top: 10%;
+        }
+        
+        .top {
+            background-color:#b3ecff;
+            width: 90%;
+            margin-left: 2.5%;
+            border: 1px solid gray;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            font-family: "Arial";
+        }
+
+        .bh_container {
+            width: 90%;
+            margin-left: 2.5%;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: right;
+            font-family: "Arial";
+        }
+        a.bh_container{
+            padding-left: 20px;
+        }
+
+        .cfile{
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px; 
+            background-color: #E0FFFF;
+        }
+
+        .text{
+            margin-left: 10%;
+            text-align: left;
+
+        }
+
+        input[type=text] {
+            width: 100%;
+            /*padding: 20px 20px;*/
+            margin: 0px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+
+            background-color: #0099cc;
+            color: white;
+            padding: 20px 20px;
+            margin: 8px 0;
+            border: 5px;
+            cursor: pointer;
+            width: 40%;
+            font-size: 14px;
+        }
+
+        
+        
+        .center {
+        	width: 90%;
+        	margin-left: 2.5%;
+            border: 1px solid gray;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .bottom {
+            width: 90%;
+            margin-left: 2.5%;
+            border: 1px solid gray;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .mytable{
+            width: 80% 
+        }
+        .bottomtable2{
+            margin-left: 10%;
+            margin-top: 20px;
+            background-color: #FFEFD5;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            text-align: left;
+            width: 80%;
+        }
+        .table2{
+            margin-left: 10%;
+        }
+    </style>
+    
+    <body>
+        <div class="body_container">
+            
+            <div class="top">
+                <p><strong>IMPORT DATA</strong></p>
+            </div>
+            <div class="bh_container">
+                <p>
+                    <h>User:</h><a href="" id="user">Admin</a>
+                    <a class="bh_container" href="#">Log out</a>
+                </p>
+            </div>
+
+            
+            <div class="center">
+                <table>
+                    <tr>
+                            <p class="text">Select file(s) to import:</p>
+                    </tr>
+                    <tr>
+                        <table  class="cfile" id="myTable" width="80%" align="center">
+                            <tr>
+                                <td width="90%"><input type="text" id="textbox0" readonly="true"></td>
+                                <td >
+                                    <input type="file" id="browse" style="display: " onChange="Handlechange()">
+                                    <input type="button" value="Brower" onclick="HandleBrowseClick(this)"/></td>
+                                <td ><a value="Clear" onclick="reset()" href="#">Clear..</td>   
+                            </tr>
+                        </table>
+                    </tr>
+                </table>
+
+                <div class="bottomtable2">
+                    <a href="#" onclick="addRow()" >Add</a> <a href="#" onclick="importfile()" >Import</a>    
+                </div>        
+            </div>
+            
+
+            <div class="bottom">
+                <table>
+                    <tr>
+                        <p class="text">List of users which is imported into DB:</p>
+                    </tr>
+                    <tr>
+                        <table id="myTable2" border="1px" width="80%" align="center">
+                            <tr>
+                                <th width="10%">NO</th>
+                                <th width="18%">User ID</th>
+                                <th width="18%">Group ID</th>
+                                <th width="18%">First Name</th>
+                                <th width="18%">Last Name</th>
+                                <th width="18%">Password</th>
+
+                            </tr>
+                                <tr><td>1</td><td>User_001</td><td>G_002</td><td>A</td><td>N.V</td><td>123</td></tr>
+                                <tr><td>2</td><td>User_002</td><td>G_002</td><td>B</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>3</td><td>User_003</td><td>G_002</td><td>c</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>4</td><td>User_004</td><td>G_002</td><td>d</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>5</td><td>User_005</td><td>G_002</td><td>e</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>6</td><td>User_006</td><td>G_002</td><td>f</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>7</td><td>User_007</td><td>G_002</td><td>g</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>8</td><td>User_008</td><td>G_002</td><td>h</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>9</td><td>User_009</td><td>G_002</td><td>i</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>10</td><td>User_010</td><td>G_002</td><td>aa</td><td>N.T</td><td>456</td></tr>
+                                <tr><td>11</td><td>User_011</td><td>G_002</td><td>s</td><td>N.T</td><td>456</td></tr>
+
+                        </table>
+                    </tr>
+                    <tr>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <table class="table2" cellpadding="10px">
+                            <td align="left">
+                            <input type="button" name="" value="<<">
+                            <input type="button" name="" value="<">
+                            <input type="button" name="" value="..">
+                            <input type="button" name="" value=">">
+                            <input type="button" name="" value=">>">
+                            </td>
+                        </table>
+                    </tr>
+                </table>        
+            </div>
+        </div>
+    </body>
+
+
+    <script>
+        var num = 1;
+        var id=1;
+        // function reset() {
+        //     document.getElementById("textbox0").value="";
+        // }
+        function addRow() {
+            var idtextbox = "textbox"+id;
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(num);
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = '<input type="text" id="'+ idtextbox +'" value="'+id+'" readonly="true">';
+            cell1= row.insertCell(1);
+            cell1.innerHTML = '<input type="button" value="Browser" onclick="HandleBrowseClick()"> <input type="file" id="browse" style="display: none" onChange="Handlechange(this)">';
+            cell1 = row.insertCell(2);
+            cell1.innerHTML = '<a value="Delete" onclick="deleteRow(this)" href="#">Remove..</a>';
+            num+=1;id+=1;
+        }
+
+        function deleteRow(r) {
+            var i = r.parentNode.parentNode.rowIndex;
+            document.getElementById("myTable").deleteRow(i);
+            num-=1
+        }
+        function HandleBrowseClick()
+        {
+            var fileinput = document.getElementById("browse").click();
+            
+        }
+        function Handlechange(a)
+        {
+            var x=a.parentNode.parentNode.rowIndex;
+            var fileinput = document.getElementById("browse");
+            var textinput = document.getElementById("textbox0");
+            textinput.value = x;
+        }
+        function importfile(){
+
+        }
+    </script>
+</html>
