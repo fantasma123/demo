@@ -1,0 +1,8 @@
+group4\assignment\controller\LoginController.class
+group4\assignment\model\User.class
+group4\assignment\util\HibernateUtil.class
+group4\assignment\dao\LoginDAO.class
+group4\assignment\dao\UserDAO.class
+group4\assignment\controller\ImprotFileController.class
+group4\assignment\model\FileUpload.class
+group4\assignment\model\Group.class

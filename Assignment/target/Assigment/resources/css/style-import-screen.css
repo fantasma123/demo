@@ -1,0 +1,98 @@
+.body_container {
+            margin-top: 10%;
+        }
+        
+        .top {
+            background-color:#b3ecff;
+            width: 90%;
+            margin-left: 2.5%;
+            border: 1px solid gray;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            font-family: "Arial";
+        }
+
+        .bh_container {
+            width: 90%;
+            margin-left: 2.5%;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: right;
+            font-family: "Arial";
+        }
+        a.bh_container{
+            padding-left: 20px;
+        }
+
+        .cfile{
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px; 
+            background-color: #E0FFFF;
+        }
+
+        .text{
+            margin-left: 10%;
+            text-align: left;
+
+        }
+
+        input[type=text] {
+            width: 100%;
+            /*padding: 20px 20px;*/
+            margin: 0px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /*button {
+
+            background-color: #0099cc;
+            color: white;
+            padding: 20px 20px;
+            margin: 8px 0;
+            border: 5px;
+            cursor: pointer;
+            width: 40%;
+            font-size: 14px;
+        }*/
+
+        
+        
+        .center {
+            width: 90%;
+            margin-left: 2.5%;
+            border: 1px solid gray;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .bottom {
+            width: 90%;
+            margin-left: 2.5%;
+            border: 1px solid gray;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        /*.mytable{
+            width: 80% 
+        }*/
+        .bottomtable2{
+            margin-left: 10%;
+            margin-top: 20px;
+            background-color: #FFEFD5;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            text-align: left;
+            width: 80%;
+        }
+        .table2{
+            margin-left: 10%;
+            width: 50%;
+            align-items: center;
+        }

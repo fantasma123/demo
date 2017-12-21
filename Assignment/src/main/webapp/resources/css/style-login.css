@@ -1,0 +1,74 @@
+form {
+    border: 0px solid #f1f1f1;
+    padding-top: 15px
+}
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 20px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#button {
+    background-color: #0099cc;
+    color: white;
+    padding: 20px 20px;
+    margin: 8px 0;
+    border: 5px;
+    cursor: pointer;
+    width: 40%;
+    font-size: 20px;
+}
+
+.h_container {
+	background-color:#b3ecff;
+	width: 90%;
+	margin-left: 2.5%;
+    border: 1px solid gray;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: "Arial";
+}
+.b_container {
+	width: 90%;
+	margin-left: 2.5%;
+    border: 1px solid gray;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.body_container {
+/*	width: 100%;
+    border: 1px solid gray;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;*/
+    margin-top: 20%;
+}
+
+#message{
+    color: red;
+}
+
+span.psw {
+	width: 50%;
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
